@@ -55,6 +55,8 @@ import { Ng2AutoCompleteModule } from 'ng2-auto-complete';
 import { DateTimePickerModule } from "ng-pick-datetime";
 import { FilterPipe } from './filter.pipe';
 import { RockregisterComponent } from './rockregister/rockregister.component';
+import { ThankyouComponent } from './thankyou/thankyou.component';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 
 @NgModule({
   imports: [
@@ -92,7 +94,9 @@ import { RockregisterComponent } from './rockregister/rockregister.component';
     FooterComponent,
     RecruiterLogsComponent,
     FilterPipe,
-    RockregisterComponent
+    RockregisterComponent,
+    ThankyouComponent,
+    PrivacypolicyComponent
     // CategoryLogsComponent,
     // JobCategoryComponent,
   ],

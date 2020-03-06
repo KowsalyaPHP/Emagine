@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, ViewChild } from '@angular/core';
-import { Router, NavigationStart, NavigationEnd, Event as NavigationEvent } from '@angular/router';
+import { Router, NavigationStart, NavigationEnd, Event as NavigationEvent ,NavigationCancel, NavigationError} from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -17,22 +17,24 @@ export class AppComponent implements OnInit {
   
   show_footer: any = 'true';
 
+ 
   constructor(private router: Router) {
 
-    router.events.forEach((event: NavigationEvent) => {
+    router.events.subscribe((event: NavigationEvent) => {
 
       //Before Navigation
       if (event instanceof NavigationStart) {
-        if (event.url == '/login' || event.url == '/employer' || event.url == '/recruiter' || event.url == '/login-rock'|| event.url == '/rockregister') {
-          this.show_footer = 'false';
+        
+        if (event.url == '/login' || event.url == '/employer' || event.url == '/recruiter' || event.url == '/login-rock'|| event.url == '/rockregister'|| event.url == '/thankyou'|| event.url == '/privacypolicy') {
+          this.show_footer = 'false';          
         }
         else {
-          this.show_footer = 'true';
+          this.show_footer = 'true';          
         }
       }
 
-
     });
+
 
   }
 
@@ -41,7 +43,7 @@ export class AppComponent implements OnInit {
 
 
   }
-
+ 
 }
 
 

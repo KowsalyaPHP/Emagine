@@ -19,6 +19,8 @@ import { FooterComponent } from "./frontend-pages/footer/footer.component";
 import { RecruiterLogsComponent } from "./recruiter-logs/recruiter-logs.component";
 import { LoginRockClientComponent } from "./login-rock-client/login-rock-client.component";
 import { RockregisterComponent } from './rockregister/rockregister.component';
+import { ThankyouComponent } from './thankyou/thankyou.component';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 
 export const AppRoutes: Routes = [
   {
@@ -107,6 +109,14 @@ export const AppRoutes: Routes = [
   {
     path: "rockregister",
     component: RockregisterComponent
+  },
+  {
+    path: "thankyou",
+    component: ThankyouComponent
+  },
+  {
+    path: "privacypolicy",
+    component: PrivacypolicyComponent
   },
 
   {

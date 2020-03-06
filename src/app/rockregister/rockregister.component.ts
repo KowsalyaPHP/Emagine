@@ -64,8 +64,9 @@ export class RockregisterComponent implements OnInit {
             this.errorMsg = "Email ID is already registered";
           }
           else {
-            this.successMsg = "Registered successfully. Your login details have been sent to the Email Id: " + this.email.value;
-            this.openEmployeeModal.nativeElement.click();
+           // this.successMsg = "Registered successfully. Your login details have been sent to the Email Id: " + this.email.value;
+           // this.openEmployeeModal.nativeElement.click();
+           this.routerObj.navigate(['/thankyou']);
             this.registrationForm.reset();
             this.registrationForm.patchValue({ employer_type: 'Rock Client' });
           }
