@@ -29,7 +29,7 @@
     "datatables.net": "^1.10.16",
     "datatables.net-dt": "^1.10.16",
     "file-saver": "^2.0.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ng-pick-datetime": "^5.0.0-beta.15",
     "ng2-auto-complete": "^0.12.0",
     "ng2-img-cropper": "^0.9.0",
